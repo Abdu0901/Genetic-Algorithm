@@ -9,7 +9,7 @@ class Combinations {
 
   int getValue() {
     int value=0;
-    for (int i=0; i <2; i++) {
+    for (int i=0; i <24; i++) {
       Items item = itemList[i];
       int v =item.value;
       value = value + v*combination[i];
