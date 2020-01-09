@@ -17,6 +17,16 @@ class Combinations {
     return value;
   }
 
+  int getWeight() {
+    int weight=0;
+    for (int i=0; i <24; i++) {
+      Items item = itemList[i];
+      int w =item.weight;
+      weight = weight + w*combination[i];
+    }
+    return weight;
+  }
+
   void printCombi() {
     for (int i=0; i <24; i++) {
       print(combination[i]);

@@ -82,7 +82,8 @@ void setup() {
   Combinations tesCombi = new Combinations();
 
   tesCombi.printCombi();
-  println(tesCombi.getValue());
+  println("Value:" + " " + tesCombi.getValue());
+  println("Weight:" + " " +  tesCombi.getWeight());
 }
 
 void draw() {
