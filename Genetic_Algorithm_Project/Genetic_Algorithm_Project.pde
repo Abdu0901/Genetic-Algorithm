@@ -85,8 +85,8 @@ void setup() {
 
   //For Loop that runs multiple Combinations according to the CombAmount set
   for (int i=0; i <CombAmount; i++) {
-      Combinations TestCombi = new Combinations();
-          if (TestCombi.getWeight() < 5001) { 
+    Combinations TestCombi = new Combinations();
+    if (TestCombi.getWeight() < 5001) { 
       TestCombi.printCombi();
       println("Value:" + " " + TestCombi.getValue());
       println("Weight:" + " " +  TestCombi.getWeight());

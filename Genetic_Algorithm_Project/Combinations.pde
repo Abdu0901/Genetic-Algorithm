@@ -29,7 +29,7 @@ class Combinations {
     }
     return weight;
   }
-  
+
   //Prints the Combination
   void printCombi() {
     for (int i=0; i <24; i++) {
