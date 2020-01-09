@@ -2,7 +2,7 @@
 
 //Amount of Combinations to be done
 int CombAmount = 50;
-
+boolean TestCombiCheck;
 //ArrayList for itemList
 Items[] itemList = new Items[24];
 
@@ -82,6 +82,7 @@ void setup() {
   itemList[22] = Notebook;
   Tent = new Items("Tent", 2000, 150);
   itemList[23] = Tent;
+  TestCombiCheck = false;
 
   //For Loop that runs multiple Combinations according to the CombAmount set
   for (int i=0; i <CombAmount; i++) {
@@ -90,6 +91,10 @@ void setup() {
       TestCombi.printCombi();
       println("Value:" + " " + TestCombi.getValue());
       println("Weight:" + " " +  TestCombi.getWeight());
+      TestCombiCheck = true;
+    }
+    if (TestCombi.getWeight() > 5000) {
+      TestCombiCheck = false;
     }
   }
 }
