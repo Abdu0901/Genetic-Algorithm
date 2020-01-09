@@ -1,5 +1,7 @@
 //Abdullah and Magnus DDU. Genetic Algorithm Project
 
+Items[] itemList = new Items[24];
+
 //Name of the item objects
 Items Map;
 Items Compas;
@@ -29,7 +31,9 @@ Items Tent;
 void setup() {
   //Constructing the items objects with Name, Weight and Value
   Map = new Items("Map", 90, 150);
+  itemList[0] = Map;
   Compas = new Items("Compas", 130, 35);
+  itemList[1] = Compas;
   Water =  new Items("Water", 1530, 200);
   Sandwich = new Items("Sandwich", 500, 160);
   Sugar = new Items("Sugar", 150, 60);
@@ -52,7 +56,11 @@ void setup() {
   Book = new Items("Book", 300, 10);
   Notebook = new Items("Notebook", 900, 1);
   Tent = new Items("Tent", 2000, 150);
- 
+
+  Combinations tesCombi = new Combinations();
+
+  tesCombi.printCombi();
+  println(tesCombi.getValue());
 }
 
 void draw() {
